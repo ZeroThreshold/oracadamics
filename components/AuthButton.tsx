@@ -1,32 +1,75 @@
-import { createClient } from "@/utils/supabase/server";
-import Link from "next/link";
-import { redirect } from "next/navigation";
-import { Button } from "./ui/button";
+"use client";
 
-export default async function AuthButton() {
+import { useEffect, useState } from "react";
+import { createClient } from "@/utils/supabase/client";
+import Link from "next/link";
+import { Button } from "./ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Menu } from "lucide-react";
+
+export default function AuthButton() {
+  const [userX, setUserX] = useState<any>(null);
   const supabase = createClient();
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  useEffect(() => {
+    const getData = async () => {
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+      setUserX(user);
+    };
+    getData();
+  }, []);
 
   const signOut = async () => {
-    "use server";
-
-    const supabase = createClient();
     await supabase.auth.signOut();
-    return redirect("/login");
+    window.location.reload();
+    return;
   };
 
-  return user ? (
-    <div className="flex items-center gap-4">
-      Hey, {user.email}!
-      <form action={signOut}>
-        <button className="py-2 px-4 rounded-md no-underline bg-btn-background hover:bg-btn-background-hover">
+  return userX ? (
+    <>
+      <div className="lg:block hidden">
+        <DropdownMenu>
+          <Button>
+            <DropdownMenuTrigger>
+              <Menu />
+            </DropdownMenuTrigger>
+          </Button>
+          <DropdownMenuContent>
+            <DropdownMenuLabel>My Account</DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem>{userX.email}!</DropdownMenuItem>
+            <DropdownMenuItem>
+              <div
+                className="text-red-500 cursor-pointer w-full"
+                onClick={signOut}
+              >
+                Logout
+              </div>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
+      <div className="lg:hidden flex flex-col gap-4">
+        <div>
+          Hey <span className="font-semibold">{userX.email}</span>!
+        </div>
+        <div
+          className="text-red-500 font-semibold cursor-pointer"
+          onClick={signOut}
+        >
           Logout
-        </button>
-      </form>
-    </div>
+        </div>
+      </div>
+    </>
   ) : (
     <Button>
       <Link
