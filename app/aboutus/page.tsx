@@ -17,7 +17,7 @@ import Image from "next/image";
 
 
 const breadcrumbsInfo = {
-    title: "About Us",
+    title: "ABOUT US",
     menus: [{
         name: "Home",
         link: "/"
