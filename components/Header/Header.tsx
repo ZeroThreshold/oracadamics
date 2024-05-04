@@ -21,7 +21,7 @@ export default function Header() {
 
   return (
     <header className="bg-white border-b">
-      <nav className="max-w-7xl p-4 flex items-center justify-between mx-auto">
+      <nav className="container p-4 flex items-center justify-between mx-auto">
         <Link href="/" className="-m-1.5 p-1.5">
           <OraLogo />
         </Link>
@@ -37,7 +37,7 @@ export default function Header() {
           </button>
         </div>
 
-        <div className="hidden lg:flex lg:justify-end items-center gap-10">
+        <div className="hidden lg:flex lg:justify-end items-center gap-10 z-40">
           <Popover.Group className="hidden lg:flex gap-x-8 lg:gap-x-12 items-center">
             {navItems.map((item, index) => {
               if (item.items) {
@@ -137,6 +137,7 @@ export default function Header() {
                     <Link
                       href={menuItem.href}
                       key={index}
+                      onClick={() => setMobileMenuOpen(false)}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       {menuItem.name}
@@ -198,6 +199,8 @@ const PopOverItems = ({
                   <div className="flex-auto">
                     <a
                       href={subitem.href}
+                      target="_blank"
+                      rel="noreferrer"
                       className="block font-semibold text-gray-900"
                     >
                       {subitem.name}
