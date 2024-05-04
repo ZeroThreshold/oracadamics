@@ -14,11 +14,14 @@ interface BreadcrumbsProps {
 
 const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ data }) => {
     return (
-        <div className='relative bg-#f20a51 '>
-        <Image src={breadcrumb} alt="" className='img-fluid w-full min-h-164 object-cover ' />
-        <h2 className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center text-2xl font-bold">{data.title}</h2>
-        
-      </div>
+        <div className='relative bg-#f20a51'>
+    <Image src={breadcrumb} alt="" className='img-fluid w-full min-h-164 object-cover' />
+
+    <h2 className="absolute inset-0 flex items-center justify-center text-white text-center text-2xl font-bold"> {data.title}</h2>
+
+    <div className="absolute bottom-0 left-0 right-0 h-20 bg-white skew-y-[-2deg] transform-gpu z-10 -mb-10 transform-origin-top-left"></div>
+</div>
+    
       
     );
 }
