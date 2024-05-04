@@ -88,42 +88,43 @@ export default async function AboutUS() {
                     <div className='row'>
                         <div className='col-md-12 col-12'>
                             <h1 className='text-4xl font-extrabold mb-5 uppercase'>OFFROAD ACADEMIES</h1>
-                                <p className="mb-4">At OFFROAD ACADEMIES and our Training Centers, our primary emphasis is on delivering top-tier off-road riding training and experiences. With a dedication to riders of all proficiency levels, our centers not only champion secure and self-assured off-road riding but also play a pivotal role in fostering the expansion of the adventure riding community. Additionally, we enhance the overall connection between the Automotive Brand and its valued customers.</p>
-                                    <p className="mb-4">OFFROAD ACADEMIES is dedicated to cultivating the skills and passion of motorcycle enthusiasts seeking thrilling off-road experiences. Our training centers operate on a distinctive model, tailored to deliver specialized training and unforgettable adventures in the realm of off-road riding.</p>
-                                        <strong className="block mb-4">Our Mission:</strong>
-                                    <p>Our core mission is to empower riders with the expertise, techniques, and self-assurance needed to conquer demanding off-road terrains. We aim to foster a community of capable riders who can confidently navigate diverse landscapes on their motorcycles.</p>
+                            <p className="mb-4">At OFFROAD ACADEMIES and our Training Centers, our primary emphasis is on delivering top-tier off-road riding training and experiences. With a dedication to riders of all proficiency levels, our centers not only champion secure and self-assured off-road riding but also play a pivotal role in fostering the expansion of the adventure riding community. Additionally, we enhance the overall connection between the Automotive Brand and its valued customers.</p>
+                            <p className="mb-4">OFFROAD ACADEMIES is dedicated to cultivating the skills and passion of motorcycle enthusiasts seeking thrilling off-road experiences. Our training centers operate on a distinctive model, tailored to deliver specialized training and unforgettable adventures in the realm of off-road riding.</p>
+                            <strong className="block mb-4">Our Mission:</strong>
+                            <p>Our core mission is to empower riders with the expertise, techniques, and self-assurance needed to conquer demanding off-road terrains. We aim to foster a community of capable riders who can confidently navigate diverse landscapes on their motorcycles.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="team-section bg-gray-100 text-center md:px-4 md:py-16  -skew-y-3 -rotate-4">
+            <div className="bg-gray-100 text-center md:px-4 md:py-16  -skew-y-3 -rotate-4">
                 <div className='skew-y-3 rotate-4'>
-                        <div className='row'>
-                            <div className='col-md-12 col-12 realtive mb-4'>
-                                <h2 className='text-4xl font-extrabold mb-5 capitalize md:text-2xl md:mb-4'>KEY PEOPLE</h2>
-                                <p>A Passionate Team when it comes to having fun riding offroad motorcycles. Whether you are looking for adventure travel or
-                                    training clinics to improve your riding skills, Our trainers and team members are well prepared for you</p>
+                <div className='container'>
+                    <div className='row'>
+                        <div className='col-md-12 col-12 realtive mb-4'>
+                            <h2 className='text-4xl font-extrabold mb-5 capitalize md:text-2xl md:mb-4'>KEY PEOPLE</h2>
+                            <p>A Passionate Team when it comes to having fun riding offroad motorcycles. Whether you are looking for adventure travel or
+                                training clinics to improve your riding skills, Our trainers and team members are well prepared for you</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-wrap justify-caenter">
+                        {peopleData.map((member, index) => (
+                            <div key={index} className="w-full sm:w-1/2 lg:w-1/2 p-4">
+                                <TeamMember
+                                    image={member.image}
+                                    name={member.name}
+                                    position={member.position}
+                                    location={member.location}
+                                    description={member.description}
+                                    instalink={member.instalink}
+                                />
                             </div>
-                        </div>
-                        <div className="flex flex-wrap justify-center">
-                            {peopleData.map((member, index) => (
-                                    <div key={index} className="w-full sm:w-1/2 lg:w-1/2 p-4">
-                                      <TeamMember
-                                        image={member.image}
-                                        name={member.name}
-                                        position={member.position}
-                                        location={member.location}
-                                        description={member.description}
-                                        instalink={member.instalink}
-                                      />
-                                    </div>
-                                  ))}
-                        </div>
-                        
+                        ))}
+                    </div>
+</div>
                 </div>
             </div>
-        <div className="py-24 bg-white">
+            <div className="py-24 bg-white">
                 <div className="container mx-auto">
                     <div className="row">
                         <div className="col-md-12 col-12 bg-gray-100 p-8 rounded-lg">
