@@ -167,7 +167,7 @@ const PopOverItems = ({
 }) => {
   return (
     <Popover key={index} className="relative">
-      <Popover.Button className="flex items-center gap-x-1 font-semibold text-gray-900 py-3 ring-0">
+      <Popover.Button className="flex items-center gap-x-1 font-semibold text-gray-900  ring-0">
         <span className="text-gray-500 hover:text-gray-900 font-medium">
           {itemName}
         </span>

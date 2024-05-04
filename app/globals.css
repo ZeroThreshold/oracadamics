@@ -73,6 +73,18 @@
   body {
     @apply bg-background text-foreground;
   }
+  html {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
+  /* Optional: show position indicator in red */
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
 }
 
 .banner-carousel {
@@ -113,4 +125,10 @@
       }
     }
   }
+}
+
+.parallax {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }

@@ -25,7 +25,7 @@ export const navItems = [
     href: "/shop",
   },
   {
-    name: "Acamadies",
+    name: "Academies",
     href: "/signup",
     items: [
       {
