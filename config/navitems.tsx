@@ -52,8 +52,8 @@ export const navItems = [
       },
       {
         name: "Drift-R School Pune",
-        description: "https://tvsdriftr.offroadacademies.com/",
-        href: "#",
+        description: "",
+        href: "https://tvsdriftr.offroadacademies.com/",
         icon: punedrift2,
       },
       {
