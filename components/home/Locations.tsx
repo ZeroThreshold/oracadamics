@@ -37,7 +37,7 @@ const Locations = () => {
   return (
     <div className="my-36">
       <div className="container flex flex-col gap-28">
-        <div className="text-center uppercase text-6xl font-extrabold">
+        <div className="text-center uppercase text-4xl lg:text-6xl font-extrabold">
           Our Academies
         </div>
         <div className="flex items-center flex-col gap-20">
