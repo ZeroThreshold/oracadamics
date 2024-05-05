@@ -10,7 +10,7 @@ function WhyUs() {
           <div className="flex flex-col items-center gap-20">
             <div className="flex justify-center items-center gap-1">
               {index === 0 ? (
-                <div className="text-6xl font-extrabold text-nowrap">
+                <div className="text-4xl lg:text-6xl font-extrabold">
                   What we offer
                 </div>
               ) : (
@@ -28,7 +28,7 @@ function WhyUs() {
               )}
 
               <div className="flex flex-col justify-center gap-7">
-                <h2 className="text-6xl font-bold">{info.title}</h2>
+                <h2 className="text-4xl lg:text-6xl font-bold">{info.title}</h2>
                 <p>{info.description}</p>
               </div>
               {!isEven && <Image src={info.img} alt={info.title} />}

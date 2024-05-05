@@ -40,7 +40,7 @@ const LearningExperiences = () => {
   return (
     <div className="my-36">
       <div className="container flex flex-col gap-28">
-        <div className="text-center uppercase text-6xl font-extrabold">
+        <div className="text-center uppercase text-4xl lg:text-6xl font-extrabold">
           Learning Experiences
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -67,7 +67,7 @@ const MiniCard = ({
   description: string;
 }) => {
   return (
-    <div className="rounded-md overflow-hidden shadow-lg">
+    <div className="rounded-md shadow-lg px-5 lg:px-0">
       <Image className="w-full" src={img} alt={title} />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{title}</div>

@@ -15,7 +15,7 @@ const Testimonials = () => {
   return (
     <div className="my-36">
       <div className="container flex flex-col gap-28">
-        <div className="text-center uppercase text-6xl font-extrabold">
+        <div className="text-center uppercase text-4xl lg:text-6xl font-extrabold">
           Testimonials
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
