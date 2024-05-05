@@ -1,8 +1,10 @@
-import { PieChart, Rocket, Fingerprint, Plus } from "lucide-react";
 import punedrift2 from "@/assets/images/driftrschoollogoblack.png";
 import punedrift1 from "@/assets/images/prodirtlogo.png";
 import goa1 from "@/assets/images/mototriplogo.png";
 import hyd1 from "@/assets/images/fmaelogo.png";
+
+import powerparts from "@/assets/images/powerparts.png";
+import speedshop from "@/assets/images/speedshop1.png";
 
 export const navItems = [
   {
@@ -23,6 +25,20 @@ export const navItems = [
   {
     name: "Shop",
     href: "/shop",
+    items: [
+      {
+        name: "SpeedShop Originals",
+        description: "",
+        href: "https://www.speedshoporiginals.com/",
+        icon: speedshop,
+      },
+      {
+        name: "PowerTech Parts",
+        description: "Coming Soon!",
+        href: "#",
+        icon: powerparts,
+      },
+    ],
   },
   {
     name: "Academies",
