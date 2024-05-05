@@ -33,7 +33,7 @@ export default async function Events() {
             <p className="mb-4">
               This Privacy Policy describes the types of information we may
               collect from you or that you may provide when you visit
-              offroadacadamies.com (our "Website") and our practices for
+              offroadacademies.com (our "Website") and our practices for
               collecting, using, maintaining, protecting, and disclosing that
               information.
             </p>
@@ -116,10 +116,10 @@ export default async function Events() {
               If you have any questions or comments about this Privacy Policy,
               you may contact us at{" "}
               <a
-                href="mailto:sales@offroadacadamies.com"
+                href="mailto:sales@offroadacademies.com"
                 className="text-blue-500"
               >
-                sales@offroadacadamies.com
+                sales@offroadacademies.com
               </a>
               .
             </p>

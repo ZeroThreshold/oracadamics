@@ -1,5 +1,5 @@
 <a href="https://github.com/ZeroThreshold/oracadamics">
-  <h1 align="center">offroadacadamies nextjs</h1>
+  <h1 align="center">offroadacademies nextjs</h1>
 </a>
 
 ## Clone and run locally
@@ -25,7 +25,7 @@
 
 ## Feedback and issues
 
-Please file feedback and issues over on the [offroadacadamies GitHub](https://github.com/supabase/supabase/issues/new/choose).
+Please file feedback and issues over on the [offroadacademies GitHub](https://github.com/supabase/supabase/issues/new/choose).
 
 ## References
 

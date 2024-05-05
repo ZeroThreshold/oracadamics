@@ -88,7 +88,7 @@ export default async function AboutUS() {
           <div className="row">
             <div className="col-md-12 col-12 font-medium">
               <h1 className="lg:text-6xl text-5xl font-extrabold mb-5 uppercase">
-                offroad acadamies
+                offroad academies
               </h1>
               <p className="mb-4">
                 At <strong>OFFROAD ACADEMIES</strong> and our Training Centers,
