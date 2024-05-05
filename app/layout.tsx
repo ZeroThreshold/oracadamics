@@ -22,9 +22,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={GeistSans.className}>
       <body className="bg-background text-foreground">
-        <Header />
-        <Notice />
-        <main className="min-h-screen flex flex-col items-center">
+        <div className="fixed z-20 w-full">
+          <Header />
+          <Notice />
+        </div>
+
+        <main className="min-h-screen flex flex-col items-center pt-[6.3rem]">
           <div className="flex-1 w-full flex flex-col gap-20 items-center">
             {children}
           </div>

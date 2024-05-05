@@ -2,6 +2,7 @@ import React from "react";
 import logo from "@/assets/images/logo/offroad-logo.png";
 import Image from "next/image";
 import { Instagram, Mail, Phone } from "lucide-react";
+import Link from "next/link";
 
 const AppFooter = () => {
   return (
@@ -39,9 +40,9 @@ const AppFooter = () => {
         </li>
       </ul>
       <div>
-        <a href="#" className="text-gray-300 hover:text-red-500">
+        <Link href="/privacy" className="text-gray-300 hover:text-red-500">
           Privacy Policy
-        </a>
+        </Link>
       </div>
       <div className="text-gray-300">
         &copy; {new Date().getFullYear()} Offroad Academies. All rights reserved
