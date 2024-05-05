@@ -47,12 +47,12 @@ export const navItems = [
       {
         name: "ProDirt Pune",
         description: "",
-        href: "#",
+        href: "https://prodirtadventure.offroadacademies.com/",
         icon: punedrift1,
       },
       {
         name: "Drift-R School Pune",
-        description: "",
+        description: "https://tvsdriftr.offroadacademies.com/",
         href: "#",
         icon: punedrift2,
       },
