@@ -62,14 +62,6 @@ const peopleData = [
     instalink: "https://www.instagram.com/kungfu_pilot/",
   },
   {
-    image: navi,
-    name: "Navi Kumar",
-    position: "Head Trainer",
-    location: "FMAE Moto Park - Hyderabad",
-    description: `Navi Kumar, a passionate biker and budding trainer at FMAE Moto Park, currently undergoing training with Nilesh "Nelly" Dhumal. Navi's love for motorcycling and his mentorship with Nelly combine to enrich his expertise in the world of two-wheeled adventures, making him a valuable asset at FMAE Moto Park.`,
-    instalink: "https://www.instagram.com/navikmr/",
-  },
-  {
     image: altaf,
     name: "Altaf Khalifa",
     position: "Founder & Head Trainer",
@@ -166,10 +158,6 @@ export default async function AboutUS() {
                     alt="prodirt Logo"
                   />
                   <div className="text-center">Pune</div>
-                </li>
-                <li className="flex flex-col items-center">
-                  <Image src={fmaeLogo} className="w-24 mb-2" alt="fmae Logo" />
-                  <div className="text-center">Hyderabad</div>
                 </li>
                 <li className="flex flex-col items-center">
                   <Image

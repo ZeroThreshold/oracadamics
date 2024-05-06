@@ -62,12 +62,6 @@ export const navItems = [
         href: "#",
         icon: goa1,
       },
-      {
-        name: "Fmae MotoPark Hyderabad",
-        description: "Coming soon!",
-        href: "#",
-        icon: hyd1,
-      },
     ],
   },
 ];
