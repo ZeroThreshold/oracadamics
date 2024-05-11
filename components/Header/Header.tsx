@@ -199,7 +199,6 @@ const PopOverItems = ({
                   <div className="flex-auto">
                     <a
                       href={subitem.href}
-                      target="_blank"
                       rel="noreferrer"
                       className="block font-semibold text-gray-900"
                     >

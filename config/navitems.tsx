@@ -47,7 +47,7 @@ export const navItems = [
       {
         name: "ProDirt Pune",
         description: "",
-        href: "https://prodirtadventure.offroadacademies.com/",
+        href: "/prodirtpune",
         icon: punedrift1,
       },
       {
