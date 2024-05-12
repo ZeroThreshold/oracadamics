@@ -132,3 +132,12 @@
   background-attachment: fixed;
   background-position: center;
 }
+
+.list-arrow {
+  list-style-type: none;
+}
+
+.list-arrow li:before {
+  content: "\2192"; /* Unicode arrow right character */
+  margin-right: 0.5rem;
+}
