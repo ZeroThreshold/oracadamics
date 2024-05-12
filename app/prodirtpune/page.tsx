@@ -5,6 +5,7 @@ import img1 from "@/assets/images/learningexp/adventuretrails.jpeg";
 import img2 from "@/assets/images/learningexp/adventurelearningdayclinic.jpeg";
 import img3 from "@/assets/images/learningexp/offroadclinic.jpeg";
 import OraLogo from "@/assets/images/logo/prodirtpune.ico"; // Assuming this is the logo for ProDirt Pune
+import { Button } from "@/components/ui/button";
 
 export default function ProDirtAdventure() {
   const ItemData = [
@@ -55,9 +56,7 @@ export default function ProDirtAdventure() {
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">{title}</div>
           <p className="text-gray-700 text-base">{description}</p>
-          <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded mt-4 hover:bg-blue-700">
-            Booking Open Now
-          </button>
+          <Button className="gap-4 mt-4">Booking Open Now</Button>
         </div>
       </div>
     );
@@ -77,7 +76,7 @@ export default function ProDirtAdventure() {
             ProDirt Pune
           </h1>
         </div>
-        <h2 className="text-5xl md:text-5xl font-extrabold uppercase text-gray-900 mb-4">
+        <h2 className="text-2xl md:text-4xl font-extrabold uppercase text-gray-900 mb-4">
           About US
         </h2>
         <p className="text-base md:text-lg text-gray-700">
@@ -93,7 +92,7 @@ export default function ProDirtAdventure() {
           width={1200}
           height={800}
         />
-        <h2 className="text-5xl md:text-5xl font-extrabold uppercase text-gray-900 mb-12">
+        <h2 className="text-2xl md:text-4xl font-extrabold uppercase text-gray-900 mb-12">
           Training Programs Offered
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
