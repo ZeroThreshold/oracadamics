@@ -4,7 +4,7 @@ import prodirtPune from "@/assets/images/prodirt-collage.43359393.jpg";
 import img1 from "@/assets/images/learningexp/adventuretrails.jpeg";
 import img2 from "@/assets/images/learningexp/adventurelearningdayclinic.jpeg";
 import img3 from "@/assets/images/learningexp/offroadclinic.jpeg";
-import OraLogo from "@/assets/images/logo/prodirtpune.ico"; // Assuming this is the logo for ProDirt Pune
+import OraLogo from "@/assets/images/prodirt-logo.png"; // Assuming this is the logo for ProDirt Pune
 import { Button } from "@/components/ui/button";
 
 export default function ProDirtAdventure() {
@@ -56,25 +56,22 @@ export default function ProDirtAdventure() {
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">{title}</div>
           <p className="text-gray-700 text-base">{description}</p>
-          <Button className="gap-4 mt-4">Booking Open Now</Button>
+          <Button className="gap-4 mt-4">Booking Open Soon</Button>
         </div>
       </div>
     );
   };
 
   return (
-    <div className="container mx-auto mt-10 md:mt-20">
+    <div className="container mt-10 md:mt-20">
       <div className=" mb-10">
         <div className="flex items-center justify-center mb-6">
           <Image
             src={OraLogo}
             alt="ProDirt Pune Logo"
-            width={100} // adjust as needed
-            height={100} // adjust as needed
+            width={400} // adjust as needed
+            height={400} // adjust as needed
           />
-          <h1 className="text-4xl md:text-6xl font-extrabold uppercase text-gray-900 ml-4">
-            ProDirt Pune
-          </h1>
         </div>
         <h2 className="text-2xl md:text-4xl font-extrabold uppercase text-gray-900 mb-4">
           About US
@@ -86,11 +83,11 @@ export default function ProDirtAdventure() {
           in 2-wheeler & 4-wheeler off-road training on various terrains.
         </p>
         <Image
-          className="p-8 mt-4 mb-12"
           src={prodirtPune}
+          className="flex items-center justify-center w-full my-20"
           alt="prodirtpune"
           width={1200}
-          height={800}
+          height={1200}
         />
         <h2 className="text-2xl md:text-4xl font-extrabold uppercase text-gray-900 mb-12">
           Training Programs Offered
