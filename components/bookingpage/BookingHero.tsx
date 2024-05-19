@@ -20,7 +20,7 @@ const MovieHero = () => {
   return (
     <div className="relative">
       {/* Background Image */}
-      <div className=" h-full object-cover absolute inset-0 z-10">
+      <div className=" h-full object-cover absolute inset-0 z-5">
         <Image
           src={course.backdrop_path}
           alt="backdrop"
@@ -30,7 +30,7 @@ const MovieHero = () => {
       </div>
 
       {/* Poster and Info */}
-      <div className="relative z-20 flex flex-col lg:flex-row items-center lg:items-center justify-center lg:justify-start px-20 py-16 lg:py-20">
+      <div className="relative z-5 flex flex-col lg:flex-row items-center lg:items-center justify-center lg:justify-start px-20 py-16 lg:py-20">
         <div className="lg:w-1/3 flex justify-center lg:justify-start">
           <div className="w-64 lg:w-96 h-96 lg:h-144">
             <Image
